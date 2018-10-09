@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var classOne = 'C0318G';
+    var classTwo = 'M0318G';
+    var classThree = 'P0323A';
+    function isClass(nameClass) {
+        check = /^[CAP][0-9]{4}[GHIKLM]$/;
+        if (check.test(nameClass))
+            return true;
+        return false;
+    }
+    console.log(isClass(classOne));
+    console.log(isClass(classTwo));
+    console.log(isClass(classThree));
+</script>
+</body>
+</html>
